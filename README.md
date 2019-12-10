@@ -13,6 +13,8 @@
 
 ## Features
 
-* **OBJ Loader** - Used to load shapes for the UFO and bombs.
+* **OBJ Loader** - Used to load shapes for the Ukelele.
+
+* **Random bar generation** bars are generated randomly to hit a specific note in the fretboard. 
 
 * **Music & Sound Effects** - Sound effects for ukelele notes.
