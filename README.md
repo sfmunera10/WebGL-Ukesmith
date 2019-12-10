@@ -17,4 +17,6 @@
 
 * **Random bar generation** bars are generated randomly to hit a specific note in the fretboard. 
 
+* **Transparency, lightning and textures in materials** cubemap, bars, frets and ukelele.obj have transparency, lightning and texture effects on their materials.  
+
 * **Music & Sound Effects** - Sound effects for ukelele notes.
