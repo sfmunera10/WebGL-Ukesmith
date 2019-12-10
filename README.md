@@ -1,5 +1,7 @@
 # WebGL-Ukesmith
 
+![View](https://user-images.githubusercontent.com/20799440/70561358-48c28100-1b58-11ea-9547-a66276162327.png)
+
 3D game inspired by Rocksmith: https://rocksmith.ubisoft.com/rocksmith/en-us/home/, but this time is for Ukelele. The purpose of this project is to show off some of the features that the WebGL graphics library can offer for 3D game applications.
 
 ## How to Run and Play
