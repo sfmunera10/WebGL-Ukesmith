@@ -1,0 +1,66 @@
+<!-- index.html - The web page document containing the canvas (drawing surface), that launches your javascript files. //-->
+<!DOCTYPE html> 
+<html> 
+    <head> 
+        <meta charset="UTF-8"/> <link rel="icon" href="assets/fav.ico">
+        <script> window.tiny_graphics = {};             // Store all our JavaScipt code inside of classes here.
+            window.classes = {}                    
+        </script>        
+        <script src="tiny-graphics.js" ></script>  <!--  Javascript "include" files.  Any code in them gets executed as part of the page loading. //-->
+        <script src= "dependencies.js" ></script>
+        <script src=   "main-scene.js" ></script>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+    <body>       <!-- Begin typing the next of your web page here. //-->
+        <div id="main-canvas" class="canvas-widget">
+            <div class="CSSgal" id="cssSlider">
+              <!-- Don't wrap targets in parent -->
+              <s id="s1"></s> 
+              <s id="s2"></s>
+              <s id="s3"></s>
+              <s id="s4"></s>
+              <div class="slider">
+                <div style="background:#1b8042;">
+                    <img src="assets/ins1.png" width="400" height="400">
+                </div>
+                <div style="background:#1b8042;">
+                    <img src="assets/ins2.png" width="400" height="400">
+                </div>
+                <div style="background:#1b8042;">
+                    <img src="assets/ins3.png" width="400" height="400">
+                </div>
+                <div style="background:#1b8042;">
+                    <img src="assets/ins4.png" width="400" height="400">
+                </div>
+              </div>
+              <div class="prevNext">
+                <div><a class="pNB" href="#s4"></a><a class="pNB" href="#s2"></a></div>
+                <div><a class="pNB" href="#s1"></a><a class="pNB" href="#s3"></a></div>
+                <div><a class="pNB" href="#s2"></a><a class="pNB" href="#s4"></a></div>
+                <div><a class="pNB" href="#s3"></a><a class="pNB" href="#s1"></a></div>
+              </div>
+
+              <div class="bullets">
+                <a href="#s1">1</a>
+                <a href="#s2">2</a>
+                <a href="#s3">3</a>
+                <a href="#s4">4</a>
+              </div>
+            </div>
+            <h1 id="high_score"></h1>
+            <h1 id="score"></h1>
+            <h1 id="pause_display"></h1>
+            <h1 id="stage_display"></h1>
+            <h1 id="game_over_msg"></h1>
+        </div>
+        <script> "use strict"     // ********************* THE ENTRY POINT OF YOUR WHOLE PROGRAM STARTS HERE ********************* 
+            // Use this code to embed a widget into any web page.  The widget inclues a 3D WebGL area
+            // (an HTML canvas) and various panels of controls.
+            const scenes = [ "Scene" ]; // First, list the names of scenes we will add to our canvas.  These will register themselves
+            // with this widget's Canvas_Manager so that their code can be called upon every time a 
+            // draw / keyboard / mouse event happens on the web page.
+            new Canvas_Widget( "main-canvas", scenes );             // Use the Canvas_Widget class to display the WebGL demo.  Pass in
+            // the name of the HTML element we are to replace with the widget.
+        </script>
+    </body>
+</html>
